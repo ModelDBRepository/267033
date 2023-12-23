@@ -1,0 +1,7 @@
+	integer nvar,nmax,nstpmx
+	
+	parameter(nvar=18,nmax=nvar)	
+	!nvar is # of diff eqs
+	!nmax is max # of diff eqs
+	
+	parameter(nstpmx=5000000)

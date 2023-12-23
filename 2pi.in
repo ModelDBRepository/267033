@@ -1,0 +1,18 @@
+0.				!ti (ms); initial time for simulation
+70000.				!tf (ms); final time for simulation
+-70.				!V0 (mV); initial membrane potential PYRAMIDAL NEURON 
+0.	1.	0.		!n0, h0,  Ca0; initial conditions for activation functions PYRAMIDAL NEURON
+140.	5.			!K_i0,	K_o0 (mM); initial intracellular potassium, initial extracellular potassium PYRAMIDAL NEURON
+12.	140.			!Na_i0,	Na_o0 (mM); initial intracellular sodium, initial extracellular sodium PYRAMIDAL NEURON
+5.	119.			!Cl_i0,	Cl_o0 (mM); initial intracellular chloride, initial extracellular chloride PYRAMIDAL NEURON
+0.	0.	0.		!lils0, lilse0, lilsi0; initial conditions for synaptic functions (for gaba to pyramidal, self-excitatory glutamate, glutamate to interneuron)
+-70.				!V0_int (mV); initial membrane potential INTERNEURON 
+0.	1.			!n0_int,h0_int; initial conditions for activation functions INTERNEURON 
+145.3				!K_i0_int; initial intracellular potassium INTERNEURON 
+17.9				!Na_i0_int; initial intracellular sodium INTERNEURON
+2400010				!Nstep; number of time steps for Runge-Kutta ODE solver 
+0.65				!gami; Conversion factor between current density and rate of ion concentration change 
+0.4	0.4	0.1		!ggabastart,ggabaend,ggabastep (mS/cm^2); loop over gaba conductance from ggabastart to ggabaend in steps of ggabastep
+3.	3.	1.0		!Jestart, Jeend, Jestep (microA); loop over PYRAMIDAL NEURON injected current from Jestart to Jeend in steps of Jestep
+1.	1.	0.2		!Ji_intstart, Ji_intend, Ji_intstep (microA); loop over INTERNEURON injected current from Ji_intstart to Ji_intend in steps of Ji_intstep
+1				!write membrane potentials? 1=yes, 0=no
